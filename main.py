@@ -1,12 +1,5 @@
 import pandas as pd
-import ftfy
 import streamlit as st
-
-def repair_text(text):
-    # Sistema potenziali errori nel testo
-    if isinstance(text, str):
-        return ftfy.fix_text(text)
-    return text
 
 def clean_data(df):
     # Cancella le prime 7 righe in quanto inutili
